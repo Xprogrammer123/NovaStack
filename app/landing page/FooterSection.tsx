@@ -25,8 +25,8 @@ const socialLinks = [
   { icon: Linkedin, href: "#", label: "LinkedIn" }
 ];
 
-export default function Footer() {
-  const [email, setEmail] = useState("");
+export const Footer =() => {
+  const [email,setEmail] = useState("");
   const [isSubscribed, setIsSubscribed] = useState(false);
 
   const handleSubscribe = (e: React.FormEvent) => {
