@@ -68,21 +68,17 @@ export default function HeroSection() {
               Experience up to 95% improvement in website performance across multiple metrics.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                className="bg-[#FF8C42] text-white hover:bg-[#FF8C42]/90 group relative overflow-hidden"
-                size="lg"
-              >
-                <span className="relative z-10 flex items-center">
-                  Start Building <ArrowRight className="ml-2 h-4 w-4" />
-                </span>
-                <motion.div
-                  className="absolute inset-0 bg-white"
-                  initial={{ scale: 0, opacity: 0 }}
-                  whileHover={{ scale: 1.5, opacity: 0.1 }}
-                  transition={{ duration: 0.5 }}
-                />
-              </Button>
-              <Button variant="outline" size="lg" className="border-[#FF8C42] text-[#FF8C42] hover:bg-[#FF8C42]/10">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              className="px-8 py-4 bg-orange-500 rounded-lg font-semibold group relative overflow-hidden"
+            >
+              <div className="absolute inset-0 bg-orange-400 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
+              <span className="relative flex items-center justify-center gap-2">
+                Get Started Now
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </span>
+            </motion.button>
+              <Button variant="outline" size="lg" className="border-[#FF8C42] text-[#FF8C42] hover:bg-[#FF8C42]/10 px-8 py-4 ">
                 View Demo
               </Button>
             </div>

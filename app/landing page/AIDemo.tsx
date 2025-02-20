@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Code2, Download, Play, Pause, RefreshCw } from "lucide-react";
+import ShinyText from "@/components/ui/shinytext";
 
 const previewCode = `
 <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
@@ -70,8 +71,7 @@ export default function AIDemo() {
             >
               {isGenerating ? (
                 <>
-                  <RefreshCw className="w-5 h-5 animate-spin" />
-                  Generating...
+                 <ShinyText text="Generating......." disabled={false} speed={3} className='custom-class' />
                 </>
               ) : (
                 <>
