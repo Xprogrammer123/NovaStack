@@ -25,7 +25,7 @@ const socialLinks = [
   { icon: Linkedin, href: "#", label: "LinkedIn" }
 ];
 
-export default function Footer() {
+export default function FooterSection() {
   const [email,setEmail] = useState("");
   const [isSubscribed, setIsSubscribed] = useState(false);
 

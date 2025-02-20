@@ -59,8 +59,8 @@ export default function TechNews() {
   return (
     <section ref={containerRef} className="py-20 bg-[#2A2A2A] relative overflow-hidden">
       {/* News Ticker */}
-      <div className="bg-black/50 py-3 mb-16">
-        <div className="container mx-auto px-4">
+      <div className="bg-black/50 py-8 mb-16">
+        <div className="container mx-auto px-1">
           <div className="overflow-hidden">
             <motion.div
               animate={{
@@ -74,7 +74,7 @@ export default function TechNews() {
                   },
                 },
               }}
-              className="flex whitespace-nowrap text-orange-500"
+              className="flex whitespace-nowrap text-orange-500 text-lg font-bold font-display" 
             >
               {tickerNews.concat(tickerNews).map((news, index) => (
                 <span key={index} className="mx-8">

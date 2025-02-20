@@ -33,21 +33,7 @@ const codeSnippets = [
   return [storedValue, setValue] as const;
 };`,
   },
-  {
-    title: "Tailwind CSS Animation Snippet",
-    author: "Mike Johnson",
-    stars: 189,
-    language: "CSS",
-    code: `@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
-  100% { transform: translateY(0px); }
-}
-
-.animate-float {
-  animation: float 3s ease-in-out infinite;
-}`,
-  },
+ 
   {
     title: "Next.js API Route with Rate Limiting",
     author: "Alex Thompson",

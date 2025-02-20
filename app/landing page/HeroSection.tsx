@@ -9,8 +9,30 @@ import { ArrowRight} from "lucide-react"
 
 export default function HeroSection() {
   return (
-    <div className="min-h-screen bg-[#1A1A1A] text-white">
-     
+    <div className="min-h-screen bg-[#0a0a0a] text-white">
+       <div className="absolute inset-0 mb-32">
+        <div className="absolute inset-0" />
+        {[...Array(20)].map((_, i) => (
+          <motion.div
+            key={i}
+            className="absolute w-4 h-4 bg-orange-500/20 rounded-full"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+            }}
+            animate={{
+              scale: [1, 2, 1],
+              opacity: [0.3, 0.8, 0.3],
+            }}
+            transition={{
+              duration: 3 + Math.random() * 2,
+              repeat: Infinity,
+              delay: Math.random() * 2,
+            }}
+          />
+        ))}
+      </div>
+
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         {/* Grid Background */}

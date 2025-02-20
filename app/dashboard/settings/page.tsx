@@ -8,7 +8,7 @@ import { Label } from "@/components/ui/label"
 import { Switch } from "@/components/ui/switch"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { PricingSection } from "@/app/landing page"
+
 
 export default function SettingsPage() {
   const [emailNotifications, setEmailNotifications] = useState(true)
@@ -101,7 +101,7 @@ export default function SettingsPage() {
                 <Button>Update Billing Info</Button>
               </CardContent>
 
-              <PricingSection/>
+             
             </Card>
           </TabsContent>
         </Tabs>
